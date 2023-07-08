@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+  <name>teresa.dat.kmz</name>
+<Style id="route30">
+<IconStyle>
+       <color>ff00ff55</color>
+       <scale>0.5</scale>
+       <Icon>
+              <href>http://maps.google.com/mapfiles/kml/shapes/placemark_square.png</href>
+       </Icon>
+</IconStyle>
+       <LabelStyle>
+       <color>ff00aaff</color>
+       <scale>0.6</scale>
+</LabelStyle>
+</Style>
+<Style id="route6">
+<IconStyle>
+       <color>ff00ff55</color>
+       <scale>0.5</scale>
+       <Icon>
+            <href>http://maps.google.com/mapfiles/kml/shapes/placemark_square_highlight.png</href>
+       </Icon>
+</IconStyle>
+<LabelStyle>
+       <color>ff00aaff</color>
+       <scale>0.6</scale>
+</LabelStyle>
+</Style>
+<StyleMap id="route1">
+<Pair>
+       <key>normal</key>
+       <styleUrl>#route30</styleUrl>
+</Pair>
+<Pair>
+       <key>highlight</key>
+       <styleUrl>#route6</styleUrl>
+</Pair>
+</StyleMap>
+<Folder>
+  <name>teresa.dat</name>
+<Folder>
+    <name>Estructuras</name>
+<Placemark>
+    <name></name>
+    <description></description>
+    <styleUrl>#route1</styleUrl>
+    <Point>
+      <coordinates>-77.64947330345046,-10.98408902836237,0</coordinates>
+    </Point>
+  </Placemark>
+<Placemark>
+    <name></name>
+    <description></description>
+    <styleUrl>#route1</styleUrl>
+    <Point>
+      <coordinates>-77.63727804802305,-10.98063701490495,0</coordinates>
+    </Point>
+  </Placemark>
+<Placemark>
+    <name></name>
+    <description></description>
+    <styleUrl>#route1</styleUrl>
+    <Point>
+      <coordinates>-77.63691938445676,-10.98141650811347,0</coordinates>
+    </Point>
+  </Placemark>
+<Placemark>
+    <name></name>
+    <description></description>
+    <styleUrl>#route1</styleUrl>
+    <Point>
+      <coordinates>-77.64903345312624,-10.98510215897525,0</coordinates>
+    </Point>
+  </Placemark>
+<Placemark>
+    <name></name>
+    <description></description>
+    <styleUrl>#route1</styleUrl>
+    <Point>
+      <coordinates>-77.64947330345046,-10.98408902836237,0</coordinates>
+    </Point>
+  </Placemark>
+</Folder>
+<Placemark>
+  <name>Ruta</name>
+  <open>1</open>
+    <Style>
+         <LineStyle>
+              <color>80ff0000</color>
+              <width>3</width>
+         </LineStyle>
+  </Style>
+  <LineString>
+         <coordinates>
+-77.64947330345046,-10.98408902836237,0 -77.63727804802305,-10.98063701490495,0 -77.63691938445676,-10.98141650811347,0 -77.64903345312624,-10.98510215897525,0 -77.64947330345046,-10.98408902836237,0 
+         </coordinates>
+  </LineString>
+</Placemark>
+</Folder>
+</Document>
+</kml>
