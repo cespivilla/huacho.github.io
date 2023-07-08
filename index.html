@@ -1,0 +1,37 @@
+<head>
+<title></title>
+<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+
+<style type="text/css">  
+html { height: 100% }    
+body { height: 100%; margin: 0; padding: 0 }     
+#google-map { height: 100% }     
+</style>
+
+<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=MY-KEY&sensor=false"> 
+</script> 
+<script>
+    function initialize() {
+        var mapOptions = {
+            center: new google.maps.LatLng(-11.00, -77.00), 
+            zoom: 10,
+            mapTypeId: google.maps.MapTypeId.SATELLITE,
+            scrollwheel: false
+        }
+
+        var map = new google.maps.Map(document.getElementById('google-map'), mapOptions);
+
+        var ctaLayer = new google.maps.KmlLayer({
+            url: 'teresa.kml'
+        });
+
+        ctaLayer.setMap(map);
+    }       
+    google.maps.event.addDomListener(window, 'load', initialize);
+ </script>
+
+ </head>
+ <body onload="initialize()">
+
+    <div id="google-map" class="google-map"></div>
+ </body>
